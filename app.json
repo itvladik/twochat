@@ -1,7 +1,7 @@
 {
-  "name": "Chat",
+  "name": "twoChat",
   "description": "Node.js + Socket.io Chat",
-  "repository": "https://github.com/halidovz/chat",
+  "repository": "https://github.com/itvladik/twochat",
   "logo": "https://cdn2.iconfinder.com/data/icons/nodejs-1/128/nodejs-128.png",
   "keywords": ["chat", "nodejs", "socketio"]
 }
