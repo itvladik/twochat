@@ -64,9 +64,9 @@
 		socket.on('message', function(data) {
 			renderMessage(data);
 		})
-		function sendMessage(time, nickname, message) {
+		function sendMessage(nickname, message) {
 			if(nickname && message)
-				socket.emit('message', renderMessage({time:time, nickname: nickname, message: message}));
+				socket.emit('message', renderMessage({nickname: nickname, time, message: message}));
 		}
 		function renderMessage(data) {
 			var div = document.createElement('DIV');
