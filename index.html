@@ -58,7 +58,7 @@
 	</div>
 
 	<script type="text/javascript">
-	
+	var time = (new Date);
 		var socket = io({transports: ['websocket']});
 		var messagesContainer = document.getElementById('messages');
 		socket.on('message', function(data) {
