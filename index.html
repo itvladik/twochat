@@ -44,7 +44,7 @@
 		<p align="center" id="greeting">Добро пожаловать в чат!</p>
 	</div>
 	<div class="panel">
-		<form onsubmit="sendMessage(this.nickname.value, this.time.value, this.message.value); this.message.value = ''; return false">
+		<form onsubmit="sendMessage(this.nickname.value, this.message.value); this.message.value = ''; return false">
 			<div class="inputs">
 				<div class="input-left">
 					<input name="nickname" placeholder="nickname" type="text" autofocus="" autocomplete="off"></input> 
@@ -64,7 +64,7 @@
 		socket.on('message', function(data) {
 			renderMessage(data);
 		})
-		function sendMessage(nickname, time, message) {
+		function sendMessage(nickname, message) {
 			if(nickname && message)
 				socket.emit('message', renderMessage({nickname: nickname, time:time, message: message}));
 		}
